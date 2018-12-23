@@ -8,8 +8,8 @@
         <meta name="author" content="CocoBasic" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <link rel="shortcut icon" href="images/favicon.ico" />       
-        <link href='http://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,300i,400,700' rel='stylesheet' type='text/css'>		
+        <link rel="shortcut icon" href="images/favicon.ico" />    
+        <link href='http://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,300i,400,700' rel='stylesheet' type='text/css'>	
         <link rel="stylesheet" type="text/css"  href='css/clear.css' />
         <link rel="stylesheet" type="text/css"  href='css/common.css' />
         <link rel="stylesheet" type="text/css"  href='css/font-awesome.min.css' />
@@ -23,8 +23,7 @@
         <![endif]-->  
     </head>
 
-
-    <body class="home">
+    <body class="page page-about">
 
         <!-- Preloader Gif -->
         <div class="doc-loader"></div>
@@ -40,7 +39,7 @@
                     <li><a href="portfolio.html">Portfolio</a></li>                    
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </nav>        
+            </nav>     
             <footer>
                 <div class="footer-info">    
                     <p class="footer-social">
@@ -60,21 +59,20 @@
                     <div class="menu-line"></div>
                 </div>
             </div>                        
-        </div>        						        
+        </div>        					
 
-
-        <!-- Home Content -->
+        <!-- About Content -->
         <div id="content" class="site-content">
 
             <div class="content-left">
                 <div class="content-left-holder">
                     <div class="welcome-content">
                         <img class="welcome-image" src="images/background.png" alt="" />
-                        <h1 class="site-logo">
+                        <div class="site-logo">
                             <a href="index.html">
                                 <img src="images/logo@2x.png" alt="Ocularus">
                             </a>
-                        </h1>
+                        </div>
                         <div class="site-description">
                             Hello,<br>
                             my name is Jason Williams and <br>
@@ -97,46 +95,32 @@
                 </div>
             </div>
 
-            <div class="content-right">
-                <div class="slider-wrapper">	         
-                    <div class="carousel-slider">
-                        <div class="carousel">
-                            <div class="carousel-cell">
-                                <img src="images/img_01.jpg" alt="" />
-                                <p class="post-num">05</p>
-                                <h3 class="entry-title"><a href="single.html">Another Day at Work</a></h3>
-                                <p class="cat-links">Office</p>
-                            </div>                       
-                            <div class="carousel-cell">
-                                <img src="images/animation.gif" alt="" />
-                                <p class="post-num">04</p>
-                                <h3 class="entry-title"><a href="single.html">Coco Basic Gif</a></h3>
-                                <p class="cat-links">Animation</p>
-                            </div>                       
-                            <div class="carousel-cell">
-                                <img src="images/img_03.jpg" alt="" />
-                                <p class="post-num">03</p>
-                                <h3 class="entry-title"><a href="single.html">Branding at the Best</a></h3>
-                                <p class="cat-links">Inspiration</p>
-                            </div>                       
-                            <div class="carousel-cell">
-                                <img src="images/img_04.jpg" alt="" />
-                                <p class="post-num">02</p>
-                                <h3 class="entry-title"><a href="single.html">Lets Do This</a></h3>
-                                <p class="cat-links">Free Art</p>
-                            </div>                                                   
-                            <div class="carousel-cell">
-                                <img src="images/img_05.jpg" alt="" />
-                                <p class="post-num">01</p>
-                                <h3 class="entry-title"><a href="single.html">Homes Magazine</a></h3>
-                                <p class="cat-links">Interior</p>
-                            </div>                                                   
-                        </div>                                              
-                    </div>                          
+            <div class="content-right">  
+                <div class="content-right-holder">
+                    <div class="header-page-content">
+                        <img src="images/animation2.gif" alt="" />
+                    </div>
+                    <p>
+                        He an thing rapid these after going drawn or. Timed she his law the spoil round defer. In surprise concerns informed betrayed he learning is former.
+                    </p>
+                    <br>
+                    <p>
+                        So yetty aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                    </p>
+                    <br>
+                    <br>
+                    <div class="contact-form">
+                        <p><input id="name" type="text" name="your-name" placeholder="Name"></p>
+                        <p><input id="contact-email" type="email" name="your-email" placeholder="Email"></p>
+                        <p><input id="subject" type="text" name="your-subject" placeholder="Subject"></p>
+                        <p><textarea id="message" name="your-message" placeholder="Message"></textarea></p>
+                        <p><input type="submit" onclick="SendMail()" value="Send"></p>                                
+                    </div>
                 </div>
             </div>
             <div class="clear"></div>
-        </div>        
+        </div>       
+
 
         <!--Load JavaScript-->
         <script type="text/javascript" src="js/jquery.js"></script>			                                       
