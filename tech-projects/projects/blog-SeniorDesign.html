@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <title>Chengming's I/O</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="description" content="Chengming Kevin Zhang's Personal Site" />
+        <meta name="keywords" content="Electrical Engineer, Computer Engineer, Inventor, Photographer" />
+        <meta name="author" content="Chengming Zhang" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <link rel="shortcut icon" href="../../images/favicon.ico" />       
+               <link href="http://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,300i,400,700" rel="stylesheet" type="text/css">	
+        <link rel="stylesheet" type="text/css"  href="../../css/clear.css" />
+        <link rel="stylesheet" type="text/css"  href="../../css/common.css" />
+        <link rel="stylesheet" type="text/css"  href="../../css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css"  href="../../css/flickity.min.css" />
+        <link rel="stylesheet" type="text/css"  href="../../css/sm-clean.css" />        
+        <link rel="stylesheet" type="text/css"  href="../../style.css" />
+        <!--[if lt IE 9]>
+                <script src="js/html5.js"></script>            
+                <script src="js/respond.min.js"></script>                   
+        <![endif]--> 
+    </head>
+
+    <body class="single single-post">
+
+        <!-- Preloader Gif -->
+        <div class="doc-loader"></div>
+
+        <!-- Left Part Sidebar -->
+        <div class="menu-left-part">
+            <nav id="header-main-menu">
+                <ul class="main-menu sm sm-clean">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../cv.html">C.V.</a></li>
+                    <li><a href="../../aboutme.html">About</a></li>      
+                    <li><a href="../techPortfolio.html">Engineering Projects</a></li>
+                    <li><a href="../../photography-projects/photographyPortfolio.html">Photography Portfolio</a></li>                    
+                    <li><a href="../../contact.html">Contact</a></li>
+                </ul>
+            </nav>        
+            <footer>
+                <div class="footer-info">    
+                    <p class="footer-social">
+                        <a href="http://www.linkedin.com/in/chengmingzhang/" target="_blank"><span class="fa fa-linkedin"></span></a>
+                        <a href="http://www.instagram.com/_ckzzz_/" target="_blank"><span class="fa fa-instagram"></span></a>
+                        <a href="#" target="_blank"><span class="fa fa-wechat"></span></a>                        
+                    </p>                    <p class="footer-text">© 2020 Chengming Zhang w/ Ocularus </p>
+</div>
+            </footer>
+        </div>
+
+        <!-- Right Part Sidebar -->
+        <div class="menu-right-part">      
+            <div class="toggle-holder">
+                <div id="toggle">
+                    <div class="menu-line"></div>
+                </div>
+            </div>                        
+        </div>        						        
+
+
+        <!-- Home Content -->
+        <div id="content" class="site-content">
+
+            <div class="content-left">
+                <div class="content-left-holder">
+                    <div class="welcome-content">
+                        <img class="welcome-image" src="../../images/background.png" alt="" />
+                        <h1 class="site-logo">
+                            <a href="../../index.html">
+                                <img src="../../images/logo@2x.png" alt="C.M. ZHANG">
+                            </a>
+                        </h1>
+                        <div class="site-description">
+                            Hello,<br>
+                            my name is Chengming Zhang <br> and 
+                            I am a Electrical & Computer
+							<b>Engineer</b>, and <b>Photographer</b>
+							from Indiana.
+                            <br>
+                            <br>
+                            <a href="https://goo.gl/maps/gExSqYdEiQ92" target="_blank">
+                                40.429243° N <br>
+                                -86.911913° W
+                            </a>
+                            <br>
+                            <br>
+                            <p>+864 720 xxxx</p>
+                            <p>
+                                <a href="mailto:cmkz97@gmail.com">cmkz97@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-right">  
+                <div class="content-right-holder">
+					<h1>Condiment Express - Senior Design Project</h1>
+					
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/thfcz0V65v8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<h2>Project Description</h2>
+					<a href="https://github.com/cmz97/Senior-Design" class="read-more" target="_blank">Github Repo Page <span class="fa fa-github"></span></a>
+					<br><br>
+					As college students with little free time on our hands, cooking is a “leisure” that we don’t often have the time. As we all know, eating at restaurants or consuming fast food every day is neither practical nor healthy. What if there is a way to somehow automate this process a bit more so we can do the same cooking in less time? After a careful look at some typical western and eastern cooking processes, we find out that for those people who are new to cooking, most of the time is wasted on measuring the correct amount of ingredients and looking through the recipe book. This becomes a problem as most people are willing to save time on cooking and it has an impact on not only the new cooks but also many middle-class households. By 2020, half of the world’s population is expected to fall in the global middle class, thus at least half of the world could benefit from our design.<br><br>
+
+					We are trying to create an IoT enabled condiment distribution device which is in sync with recipes that sit on the countertop. This device can distribute condiments in order with precise measurements. Users can fill in condiments in the included bottle which has a thread on the bottom and attached to the machine. The top cap is to be opened by the user to refill the condiments and the bottom thread is used by the machine for dispensing. By using our application via BlueTooth, users can communicate send information to the machine of which condiments are needed. The machine will also alert users if any condiments are running low and need a refill. To operate, it first calibrates its x-y axis and then calibrates its weight sensor. The condiment dispensing routine will happen after the calibrations are done. Since the condiments are dispensed in sequence based on the recipe, users will take the condiment directly and mix then with the rest of the food. Users need to wash the condiment collector and return it to the machine, and the machine will continue to the next sequence of the condiment dispensing.<br><br>
+					
+					<h2>Software Design</h2>
+					Given that we are designing a machine that can automatically prepare condiments for users based on requests. Multiple stages will be working collaboratively to achieve that. The computation flow is illustrated through the flowchart attached in Appendix A. Throughout the entire dispensing system, there will be several states corresponding to different stages of the dispense routine.<br><br>
+					
+					<ol>
+						<li>PREDISPENSE - the first state of the routine where the motor is moving the catcher from its starting location to the location of the condiments which requested through the X-Y system.</li>
+						
+						<li>DISPENSING - the vibrating motor will vibrate causing the solid condiment pass through the opening to the catcher or the peristaltic pump pumping liquid condiments from container to the catcher. The weight sensor will be monitoring the weight being dispensed for solid condiments. Once it has enough collected in the catcher, the routine will move to the next state.</li>
+						
+						<li>PREDELIVERY - the catcher move to the delivery point. This is similar to the PREDISPENSE state where all it is doing is moving the X-Y motor to the designated location. </li>
+						
+						<li>DELIVERING - the state where the condiments are dispensed once more from the catcher to the delivery spoon where user can take out of the machine and use. The catcher will have an opening controlled by the motor. It will progress to the next state once the condiments have been dispensed to the spoon.</li>
+						
+						<li>POSTDELIVERY - the spoon will be unlocked in this state and users are free to take the condiments they requested.</li>
+					
+					</ol><br>
+
+					Given those states and the flow of the entire dispensing routine, expectations can be divided into the following categories:<br><br>
+					
+					<ol>
+						<li>Being able to communicate with computers through BlueTooth that is built into the ESP32. This requires the correct setup of the I/O on the microcontroller and using USART protocol to send/receive information between two endpoints. Another part of the communication from the software perspective is being able to parse the user command, with specific format, that what is being communicated is all ASCII text.</li>
+						
+						<li>The main part of this project is to control the motors. Therefore, another expected 
+						functionality would be to move the motor of the X-Y system to the desired location given the chosen condiment. This involves setting up the PWM signal for the motor driver and being able to drive the stepper motor by the correct number of rotations so that the catcher end up at the desired location. The peristaltic pump will also be controlled by the PWM signal to dispense liquid condiments. Being able to dispense a predetermined amount of liquid condiments by precisely control the pump with controlling the PWM duty cycle and frequency is also one of the expected functionalities.</li>
+						
+						<li>The entire system also has multiple sensors that require analog-to-digital conversion: the temperature sensor, the humidity sensor, and the weight sensor. The temperature and humidity sensors will be working together to provide information regarding the environment of the condiments to users through the OLED display. The weight sensor will be working with the solid dispensing system to precisely measure the amount being dispensed. There are two software expectations: 1) being able to read in the value from the sensor using the built-in analog-to-digital converter and 2) use the reading from the weight sensor to determine whether the system should dispense more solid condiments or stop.</li>
+						
+						<li>An OLED will be used as a way to display information to the user, such as the step being processed out of the entire dispensing routine. The OLED will be communicated by using the SPI protocol, some expected functionalities here are to correctly setup display through SPI and being able to display the correct information rather than random pixels.</li>
+					</ol><br>
+					
+					<img src="../img/flowchart.png"><br>
+
+					<h2>Electronic Circuit Design</h2>
+					
+					<img src="../img/micro.png"><br>
+					Overall, the system is controlled by the Espressif System’s ESP32, a 32 bit SoC with 240 Mhz clock speed that also includes Bluetooth, wifi, and networking modules. The microcontroller software, besides its main functionality of controlling the sensor and communicating with its peripherals, also translates the input which is in (x,y) coordinate to PWM signal which is used to control the stepper motor. <br><br>
+					
+					The operating frequency used in our electric system is 240 MHz which is overkill for our application. However, due to the network hardware, onboard Bluetooth and WiFi, and sleeping features available in the ESP32, it is no doubt our choice for this task. As we have stated in our proposal, even though we are not going to implement any networking feature, the end goal is to design this device into an IoT. <br><br>
+					
+					The Auto reset circuit is borrowed from Adafruit's ESP32 Feather Board design, which trigger boot loader mode when programing via USB.<br><br>
+					
+					<img src="../img/power.png"><br>
+					
+					There is two level of power circuit. This one is a buck converter that convert 5v to 3.3v for the microcontroller and the other sensors. This circuit is set to output for 1A max. The MOSFET used on the left is used to switch power supply from power jack to USB. This is to prevent unevent voltage potential between two 5v power supply (usb and power jack)
+
+					<img src="../img/power2.png"><br>
+					
+					This is the second power circuit that uses a buck converter that convert 12v to 5v for the use of 5v regulator, stepper-motor, servo, and other component.  This circuit is set to output for 3A max.
+					
+					<img src="../img/u2serial.png"><br>
+					
+					This is the debugger USB to Serial Converter from SLab. 
+					
+					<img src="../img/PWM.png"><br>
+					
+					Since we have over 15 PWM signal used, we can not generate all PWM signal on the native ESP32 Clock. This 16 Channel 12-Bit PWM generator chip that use I2C. 
+
+					<img src="../img/i2c2gpio.PNG"><br>
+					
+					This SX1509 Chip is a 16 Channel GPIO expander via I2C. This is used due to the lack of I/O of the ESP32 chip. However, during our project contruction, we found out that this chip is highly unreliable, thus, in the future version, this will be replaced with something like a shift register that is eazy and reliable. 
+					
+					<img src="../img/tri.PNG"><br>
+					
+					This TMC2208 is a stepper motor driver with a lot of capabilities. We choose to use this chip to power our stepper motor mostly because of its ability to run a stepper motor much smoother and with much less noise compared to a A4988 stepper motor driver which is used widly in this application. Although TMC2208 has SPI version of the chip, we just happen to have the digital driver version in hand.
+					
+					<img src="../img/sensors.PNG"><br>
+					
+					There is two sensor used in this project. One is HTU21DF, a temperature and humidity sensor that is used in this project to prevent food from going spoiled. The other is a Accelerometer, which is to ensure the machine is only running when its installed on a leveled plane, and stationary. Any other motion will trigger the machine to stop, to prevent injury. 
+
+					<h2>PCB Design</h2>
+					
+					This PCB is one of my best work. Its a four layer PCB board with many I/O and mixed signals. Here are some picture of the Board File from top layer to the bottom layer.<br>
+					
+					<img src="../img/1.PNG">
+					<img src="../img/2.PNG"><br>
+
+
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <!--Load JavaScript-->
+        <script type="text/javascript" src="../../js/jquery.js"></script>			                                       
+        <script type="text/javascript" src="../../js/imagesloaded.pkgd.js"></script>                
+        <script type="text/javascript" src="../../js/isotope.pkgd.js"></script>                
+        <script type="text/javascript" src="../../js/jquery.smartmenus.min.js"></script>           
+        <script type="text/javascript" src="../../js/flickity.pkgd.min.js"></script>
+        <script type="text/javascript" src="../../js/jquery.fitvids.js"></script>                          
+        <script type="text/javascript" src="../../js/jquery.easing.1.3.js"></script>          
+		<script type="text/javascript" src="../../js/showdown.min.js"></script> 
+		
+		
+		
+        <script type="text/javascript" src="../../js/main.js"></script>
+    </body>
+</html>
