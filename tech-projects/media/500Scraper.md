@@ -19,7 +19,6 @@
 
 
 
-<!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
 * [About the Project](#about-the-project)
@@ -34,7 +33,6 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 
 <img src="https://raw.githubusercontent.com/cmz97/chengmingzhang.com/master/tech-projects/media/readmeMedia/cmd.gif">
@@ -46,7 +44,6 @@
 * [tqdm](https://github.com/tqdm/tqdm)
 
 
-<!-- GETTING STARTED -->
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
