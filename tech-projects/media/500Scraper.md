@@ -37,7 +37,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="https://github.com/cmz97/chengmingzhang.com/blob/master/tech-projects/media/readmeMedia/cmd.gif">
+<img src="https://raw.githubusercontent.com/cmz97/chengmingzhang.com/master/tech-projects/media/readmeMedia/cmd.gif">
 
 
 ### Built With
