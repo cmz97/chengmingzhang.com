@@ -43,7 +43,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![](https://github.com/cmz97/Multi-Thread-500px-Scraper/blob/master/readmeMedia/cmd.gif)
+![](https://github.com/cmz97/chengmingzhang.com/blob/master/tech-projects/media/readmeMedia/cmd.gif)
 
 ### Built With
 
