@@ -136,42 +136,42 @@
 						<li>An OLED will be used as a way to display information to the user, such as the step being processed out of the entire dispensing routine. The OLED will be communicated by using the SPI protocol, some expected functionalities here are to correctly setup display through SPI and being able to display the correct information rather than random pixels.</li>
 					</ol><br>
 					
-					<img src="../img/flowchart.png"><br>
+					<img src="../media/flowchart.png"><br>
 
 					<h2>Electronic Circuit Design</h2>
 					
-					<img src="../img/micro.png"><br>
+					<img src="../media/micro.png"><br>
 					Overall, the system is controlled by the Espressif System’s ESP32, a 32 bit SoC with 240 Mhz clock speed that also includes Bluetooth, wifi, and networking modules. The microcontroller software, besides its main functionality of controlling the sensor and communicating with its peripherals, also translates the input which is in (x,y) coordinate to PWM signal which is used to control the stepper motor. <br><br>
 					
 					The operating frequency used in our electric system is 240 MHz which is overkill for our application. However, due to the network hardware, onboard Bluetooth and WiFi, and sleeping features available in the ESP32, it is no doubt our choice for this task. As we have stated in our proposal, even though we are not going to implement any networking feature, the end goal is to design this device into an IoT. <br><br>
 					
 					The Auto reset circuit is borrowed from Adafruit's ESP32 Feather Board design, which trigger boot loader mode when programing via USB.<br><br>
 					
-					<img src="../img/Power.PNG"><br>
+					<img src="../media/Power.PNG"><br>
 					
 					There is two level of power circuit. This one is a buck converter that convert 5v to 3.3v for the microcontroller and the other sensors. This circuit is set to output for 1A max. The MOSFET used on the left is used to switch power supply from power jack to USB. This is to prevent unevent voltage potential between two 5v power supply (usb and power jack)
 
-					<img src="../img/power2.PNG"><br>
+					<img src="../media/power2.PNG"><br>
 					
 					This is the second power circuit that uses a buck converter that convert 12v to 5v for the use of 5v regulator, stepper-motor, servo, and other component.  This circuit is set to output for 3A max.
 					
-					<img src="../img/u2serial.png"><br>
+					<img src="../media/u2serial.PNG"><br>
 					
 					This is the debugger USB to Serial Converter from SLab. 
 					
-					<img src="../img/PWM.PNG"><br>
+					<img src="../media/PWM.PNG"><br>
 					
 					Since we have over 15 PWM signal used, we can not generate all PWM signal on the native ESP32 Clock. This 16 Channel 12-Bit PWM generator chip that use I2C. 
 
-					<img src="../img/i2c2gpio.PNG"><br>
+					<img src="../media/i2c2gpio.PNG"><br>
 					
 					This SX1509 Chip is a 16 Channel GPIO expander via I2C. This is used due to the lack of I/O of the ESP32 chip. However, during our project contruction, we found out that this chip is highly unreliable, thus, in the future version, this will be replaced with something like a shift register that is eazy and reliable. 
 					
-					<img src="../img/Tri.PNG"><br>
+					<img src="../media/Tri.PNG"><br>
 					
 					This TMC2208 is a stepper motor driver with a lot of capabilities. We choose to use this chip to power our stepper motor mostly because of its ability to run a stepper motor much smoother and with much less noise compared to a A4988 stepper motor driver which is used widly in this application. Although TMC2208 has SPI version of the chip, we just happen to have the digital driver version in hand.
 					
-					<img src="../img/Sensors.PNG"><br>
+					<img src="../media/Sensors.PNG"><br>
 					
 					There is two sensor used in this project. One is HTU21DF, a temperature and humidity sensor that is used in this project to prevent food from going spoiled. The other is a Accelerometer, which is to ensure the machine is only running when its installed on a leveled plane, and stationary. Any other motion will trigger the machine to stop, to prevent injury. 
 
@@ -179,8 +179,8 @@
 					
 					This PCB is one of my best work. Its a four layer PCB board with many I/O and mixed signals. Here are some picture of the Board File from top layer to the bottom layer.<br>
 					
-					<img src="../img/1.png">
-					<img src="../img/2.png"><br>
+					<img src="../media/1.png">
+					<img src="../media/2.png"><br>
 
 
                 </div>
